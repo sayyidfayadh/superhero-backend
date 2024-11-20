@@ -10,7 +10,7 @@ superHeroServer.use(cors())
 superHeroServer.use(express.json())
 superHeroServer.use(router)
 superHeroServer.use('/upload',express.static('./upload'))
-const PORT=3000;
+const PORT=process.env.PORT || 3000;
 superHeroServer.listen(PORT,()=>{
   console.log(`superHeroServer started running at ${PORT}`);
 })
