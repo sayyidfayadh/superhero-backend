@@ -14,7 +14,6 @@ const PORT=process.env.PORT || 3000;
 superHeroServer.listen(PORT,()=>{
   console.log(`superHeroServer started running at ${PORT}`);
 })
-
 superHeroServer.get('/',(req,res)=>{
   res.status(200).send('<h1 >super hero is ready</h1>')
 })
